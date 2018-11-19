@@ -9,6 +9,8 @@ This is the top-level repository for a clinical trial web application, serving a
 - Gulp >= local version 3.9.1
 - React >= 15.6.2
 
+Run `npm install` to load project dependencies; 
+
 ## Running Locally
 
 ### Client
