@@ -1,0 +1,35 @@
+/* Header */
+
+body header {
+	background: #002a5c;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5px 10px;
+	min-height: 45px;
+	.headerSection {
+		display: flex;
+		align-items: center;
+		.headerLogo {
+			padding: 0 15px;
+			h3 { cursor: pointer; }
+			.ns_logo {
+				max-width: 165px;
+			}
+		}
+
+		.user-email {
+			position: relative;
+			margin-top: 10px;
+			padding-right: 10px;
+		}
+
+		.page-title {
+			position: relative;
+			cursor: pointer;
+			margin-top: 10px;
+			padding: 0px 5px;
+		}
+	}
+}

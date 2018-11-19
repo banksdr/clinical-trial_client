@@ -1,0 +1,57 @@
+/* Resets */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  // color: #fff;
+  font-family: 'Montserrat', sans-serif!important;
+  font-size: 15px;
+  font-smoothing: antialiased;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body a, body button {
+  text-decoration: none;
+  outline: 0;
+  &:focus, &:hover { outline: 0!important; text-decoration: none; color: #fff!important; }
+}
+
+input, select, textarea {
+  border: 1px solid #D8D8D8;
+  color: #515A71!important;
+  display: block;
+  width: 100%;
+  height: 40px;
+  outline: 0;
+  font-size: 13px;
+  font-family: sans-serif;
+  border-radius: 3px;
+  text-indent: 1em;
+}
+
+select { background-color: #EFF0F4; }
+body .Select-control { height: 40px; }
+body .Select-value { color: #515A71!important; }
+
+body h1,
+body h2,
+body h3,
+body h4,
+label,
+p {
+font-family: 'Montserrat', sans-serif!important;
+
+&.inherit-color {
+    color: #000;
+    color: initial;
+}
+}
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 14px; }

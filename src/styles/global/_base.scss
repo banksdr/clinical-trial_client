@@ -1,0 +1,24 @@
+/* Base */
+
+.content {
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 60px 25px;
+	width: 100%;
+}
+
+section {
+	margin: 12vh auto;
+	.layout {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+	}
+}
+
+#container {
+	margin: 1em auto;
+	max-width: 1200px;
+}

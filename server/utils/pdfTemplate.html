@@ -1,0 +1,77 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Oswald:500');
+
+.trial-report {
+  color: #262626;
+  font-family: 'Open Sans', 'Times New Roman';
+  line-height: 24px;
+}
+
+h2 {
+  background: #002a5c;
+  color: #fff;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#trial-bg {
+  background-image: url('http://localhost:5000/assets/img/clinical-trial.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2em;
+}
+
+</style>
+
+<div class="trial-report">
+  <table cellpadding="5" cellspacing="0" border="0" width="100%">
+    <tr><td align="center" valign="top"><h2>AER Inc. | Strategy Group</h2></td></tr>
+    <tr><td>Query: {{search}}</td></tr>
+  </table>
+  <div id="trial-bg"></div>
+  {{#each trials}}
+  <table cellpadding="5" cellspacing="0" border="0" width="100%">
+    <tr><td><h3>Public Title</h3></td></tr>
+    <tr><td>{{this.public_title}}</td></tr>
+  </table>
+  <table cellpadding="5" cellspacing="0" border="0" width="100%">
+    <tr><td><h3>Interventions</h3></td></tr>
+    {{#if this.interventions.length}}
+    {{#each this.interventions}}
+    <tr>
+      <td>{{this.name}}</td>
+    </tr>
+    {{/each}}
+    {{else}}
+    <tr><td>N/A</td></tr>
+    {{/if}}
+  </table>
+  <table cellpadding="5" cellspacing="0" border="0" width="100%">
+    <tr><td><h3>Locations</h3></td></tr>
+    <tr>
+      <td>ID</td>
+      <td>NAME</td>
+      <td>TYPE</td>
+      <td>ROLE</td>
+    </tr>
+    {{#if this.locations.length}}
+    {{#each this.locations}}
+    <tr>
+      <td>{{this.id}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.type}}</td>
+      <td>{{this.role}}</td>
+    </tr>
+    {{/each}}
+    {{else}}
+    <tr><td>N/A</td></tr>
+    {{/if}}
+  </table>
+  <hr />
+  {{/each}}
+</div>
